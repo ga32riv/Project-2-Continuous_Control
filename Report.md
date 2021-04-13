@@ -25,7 +25,9 @@ The agent was trained using [a single-agent DDPG](https://github.com/udacity/dee
 The *Actor* and the *Critic* Neural Networks have the same architecture:
 
 Fully connected layer - input (state size): 33 - output: 400
+
 Fully connected layer - input: 400 - output: 300
+
 Fully connected layer - input: 300 - output (action size, with tanh activation): 4
 
 ## Parameters
@@ -56,4 +58,5 @@ Environment SOLVED in 113 episodes!	Moving Average =30.0 over last 100 episodes
 
 ## Ideas for Future Work
 compare the results with other algorithm, for example try A2C and A3C
+
 Perform a hyperparameter search
