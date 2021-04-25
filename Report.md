@@ -33,7 +33,7 @@ The *Actor* and the *Critic* Neural Networks have the same architecture:
 A [batch normalisation](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html) is applied in the first fully connected layer
 
 ## Parameters
-
+```
 BUFFER_SIZE = int(1e6)  # replay buffer size
 BATCH_SIZE = 128        # minibatch size
 GAMMA = 0.99            # discount factor
@@ -47,6 +47,7 @@ OU_SIGMA = 0.2          # Ornstein-Uhlenbeck noise parameter
 OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter
 EPSILON = 1.0           # explore->exploit 
 EPSILON_DECAY = 1e-6    # decay rate 
+```
 
 ## Results
 ```
