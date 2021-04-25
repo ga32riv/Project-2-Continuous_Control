@@ -30,7 +30,7 @@ The *Actor* and the *Critic* Neural Networks have the same architecture:
 
 - Fully connected layer - input: 300 - output: 4 (action size, with tanh activation for the actor)
 
-A [batch normalisation] (https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html) is applied in the first fully connected layer
+A [batch normalisation](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html) is applied in the first fully connected layer
 
 ## Parameters
 
