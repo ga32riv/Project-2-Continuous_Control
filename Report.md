@@ -24,11 +24,13 @@ The agent was trained using [a single-agent DDPG](https://github.com/udacity/dee
 
 The *Actor* and the *Critic* Neural Networks have the same architecture:
 
-Fully connected layer - input (state size): 33 - output: 400
+- Fully connected layer - input (state size): 33 - output: 400 (ReLu activation function)
 
-Fully connected layer - input: 400 - output: 300
+- Fully connected layer - input: 400 - output: 300 (ReLu activation function)
 
-Fully connected layer - input: 300 - output (action size, with tanh activation): 4
+- Fully connected layer - input: 300 - output: 4 (action size, with tanh activation for the actor)
+
+A [batch normalisation] (https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html) is applied in the first fully connected layer
 
 ## Parameters
 
